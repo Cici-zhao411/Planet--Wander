@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行星旅人 | 个人简介</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">Planet Wander</a>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="about.html" class="active">个人简介</a>
+          <a href="routes.html">累计旅行路线</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="bio-header">
+            <p class="section-title">About Me</p>
+            <button id="bio-edit-toggle" class="ghost-btn">开启编辑</button>
+          </div>
+          <h1>写作、摄影与地理实地观察</h1>
+          <p id="bio-text" data-bio>热爱生活，热爱自由，敢于尝试各种挑战，热衷于寻遍各种地貌，常驻江苏。与自然对话，与城市共语，听千人千言，看世间百态。</p>
+        </div>
+        <div class="hero-card">
+          <h3>核心标签</h3>
+          <div class="badge-list" data-badges>
+            <span class="badge">地理观察</span>
+            <span class="badge">城市漫步</span>
+            <span class="badge">人文摄影</span>
+            <span class="badge">长线徒步</span>
+            <span class="badge">美食地图</span>
+            <div class="badge-actions">
+              <button class="ghost-btn badge-add" id="badge-add-btn">+ 添加</button>
+              <button class="ghost-btn badge-delete" id="badge-delete-btn">删减标签</button>
+            </div>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="assets/images/个人简介.jpg" alt="个人简介照片" id="portrait-img">
+          <button type="button" class="portrait-trigger" id="portrait-trigger">更换照片</button>
+          <input type="file" id="portrait-input" accept="image/*" hidden>
+        </figure>
+      </section>
+
+      <section class="info-grid">
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>旅行装备</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>Canon 相机 / 大疆 Action 5 / 口袋速写本等。</p>
+        </article>
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>记录方式</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>以图像、声场录音与地理速写，结合行程轨迹和温度数据，整理成专题文章和互动地图。</p>
+        </article>
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>正在关注</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>川西高原生态修复、海岸线侵蚀、人类与雪山的距离、旧城改造后的社区共建。</p>
+        </article>
+      </section>
+
+      <section style="margin-top:3rem;">
+        <div class="timeline-header">
+          <p class="section-title">Timeline</p>
+          <div class="timeline-controls">
+            <button id="timeline-edit-toggle" class="ghost-btn">开启编辑</button>
+            <button id="timeline-add" class="ghost-btn">新增旅程</button>
+            <span class="hint">点击按钮可直接修改时间轴内容</span>
+          </div>
+        </div>
+        <div class="timeline" data-timeline>
+          <div class="timeline-item">
+            <h3>2025 · 北疆湖泊新线</h3>
+            <p>新疆阿勒泰地区—乌鲁木齐—禾木—赛里木湖—喀纳斯，沿山脉记录游牧村落与湖泊季节更迭。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2023 · 西南高原深描</h3>
+            <p>以稻城亚丁—理塘—甘孜藏族自治州—阿坝州藏族自治州为主线，拍摄海拔变化下的昼夜节奏。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2022 · 中原文化问根</h3>
+            <p>河南洛阳、开封、郑州，以及清明上河园、开封府、明堂，用脚步触摸中原文明的脉络。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2019 · 西北荒漠探索与黄河寻迹</h3>
+            <p>西安—宁夏沙坡头—银川—腾格里沙漠—山西太原—壶口瀑布，追踪荒漠与母亲河交织的地貌故事。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2017 · 神秘西南迷踪</h3>
+            <p>走入西双版纳热带季雨林的水果、孔雀与蝴蝶王国，再到广西桂林山水与漓江漂流，感受湿热气候与喀斯特画卷。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2016 · 海岸线环游</h3>
+            <p>走过海南三亚与海口，向北延展至浙江沿海与普陀山。</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2016—2019 · 中轴线与城市记忆</h3>
+            <p>在北京、西安、南京、上海等城市完成“街区温度”系列，结合声音采样与夜色影像。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> 行星旅人 · 记录每一段地理现场
+    </footer>
+
+    <script src="assets/js/about.js"></script>
+  </body>
+</html>

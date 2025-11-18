@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行星旅人 | 旅行记录</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">Planet Wander</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">首页</a>
+          <a href="about.html">个人简介</a>
+          <a href="routes.html">累计旅行路线</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="section-title">Explorer Log</p>
+          <h1>在路上，记录风景与故事</h1>
+          <p>保持好奇、保持敬畏。沿着山脉、海岸与城市的灯火，在星球研究所式的审视中收集自然与人文的细节，让每一次远行都留下可再访的线索。</p>
+          <div class="badge-list">
+            <span class="badge">34座城市</span>
+            <span class="badge">12000+ km</span>
+            <span class="badge">持续更新</span>
+          </div>
+        </div>
+        <div class="hero-card hero-card-photo" id="hero-card-photo">
+          <div class="hero-card-actions">
+            <button class="ghost-btn hero-card-upload" id="hero-card-upload">上传背景</button>
+            <button class="ghost-btn hero-card-edit" id="hero-card-edit">编辑足迹文案</button>
+          </div>
+          <input type="file" id="hero-card-input" accept="image/*" hidden>
+          <div class="hero-card-content">
+            <h3 id="hero-title">最新足迹 · 新疆</h3>
+            <p id="hero-description">追逐阿勒泰的晨雾、喀纳斯的湖光，以及乌鲁木齐街区里交织的多元气息。</p>
+            <div style="margin-top:1rem;display:flex;gap:1rem;flex-wrap:wrap;">
+              <div>
+                <span class="stat">48h</span>
+                <p class="muted">城市观察</p>
+              </div>
+              <div>
+                <span class="stat">14</span>
+                <p class="muted">影像片段</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <p class="section-title">Footage Stream</p>
+          <div class="gallery-controls">
+            <button class="ghost-btn" id="gallery-add-btn">添加照片</button>
+            <span class="hint">本地上传，仅存储在浏览器</span>
+            <input type="file" id="gallery-add-input" accept="image/*" hidden>
+          </div>
+        </div>
+        <div class="loop-gallery">
+          <div class="loop-track" data-loop-track>
+          <figure class="masonry-item">
+            <img src="assets/images/1000001781.jpg" alt="旅途影像 1000001781">
+            <span>行程片段 · 1000001781</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/1000001783.jpg" alt="旅途影像 1000001783">
+            <span>行程片段 · 1000001783</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/208.jpg" alt="旅途影像 208">
+            <span>行程片段 · 208</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/302.jpg" alt="旅途影像 302">
+            <span>行程片段 · 302</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/388.jpg" alt="旅途影像 388">
+            <span>行程片段 · 388</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/dji_mimo_20250612_180504_20250612180505_1749723892535_photo.jpg" alt="旅途影像 dji_mimo 180504">
+            <span>行程片段 · dji_mimo 180504</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/IMG_3342.jpeg" alt="旅途影像 IMG_3342">
+            <span>行程片段 · IMG_3342</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/IMG_3349.jpeg" alt="旅途影像 IMG_3349">
+            <span>行程片段 · IMG_3349</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/IMG_3353.jpeg" alt="旅途影像 IMG_3353">
+            <span>行程片段 · IMG_3353</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/IMG_3425.jpeg" alt="旅途影像 IMG_3425">
+            <span>行程片段 · IMG_3425</span>
+          </figure>
+          <figure class="masonry-item">
+            <img src="assets/images/IMG_3475.jpeg" alt="旅途影像 IMG_3475">
+            <span>行程片段 · IMG_3475</span>
+          </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> 行星旅人 · 记录每一段地理现场
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
