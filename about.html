@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行星旅人 | 个人简介</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">Planet Wander</a>
+        <div class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="about.html" class="active">个人简介</a>
+          <a href="routes.html">累计旅行路线</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="bio-header">
+            <p class="section-title">About Me</p>
+            <button id="bio-edit-toggle" class="ghost-btn">开启编辑</button>
+          </div>
+          <h1>写作、摄影与地理实地观察</h1>
+          <p id="bio-text" data-bio>热爱生活，热爱自由，敢于尝试各种挑战，热衷于寻遍各种地貌，常驻江苏。与自然对话，与城市共语，听千人千言，看世间百态。</p>
+        </div>
+        <div class="hero-card">
+          <h3>核心标签</h3>
+          <div class="badge-list" data-badges>
+            <span class="badge">地理观察</span>
+            <span class="badge">城市漫步</span>
+            <span class="badge">人文摄影</span>
+            <span class="badge">长线徒步</span>
+            <span class="badge">美食地图</span>
+            <div class="badge-actions">
+              <button class="ghost-btn badge-add" id="badge-add-btn">+ 添加</button>
+              <button class="ghost-btn badge-delete" id="badge-delete-btn">删减标签</button>
+            </div>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="assets/images/个人简介.jpg" alt="个人简介照片" id="portrait-img">
+          <button type="button" class="portrait-trigger" id="portrait-trigger">更换照片</button>
+          <input type="file" id="portrait-input" accept="image/*" hidden>
+        </figure>
+      </section>
+
+      <section class="info-grid">
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>旅行装备</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>Canon 相机 / 大疆 Action 5 / 口袋速写本等。</p>
+        </article>
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>记录方式</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>以图像、声场录音与地理速写，结合行程轨迹和温度数据，整理成专题文章和互动地图。</p>
+        </article>
+        <article class="card" data-editable-card>
+          <div class="card-heading">
+            <h3>正在关注</h3>
+            <button class="ghost-btn card-edit">开启编辑</button>
+          </div>
+          <p>川西高原生态修复、海岸线侵蚀、人类与雪山的距离、旧城改造后的社区共建。</p>
+        </article>
+        <article class="card">
+          <h3>联系方式</h3>
+          <p>
+            <a href="mailto:3293362283@qq.com">3293362283@qq.com</a>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> 行星旅人 · 记录每一段地理现场
+    </footer>
+
+    <script src="assets/js/about.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行星旅人 | 旅行记录</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">Planet Wander</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">首页</a>
+          <a href="about.html">个人简介</a>
+          <a href="routes.html">累计旅行路线</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="section-title">Explorer Log</p>
+          <h1>在路上，记录风景与故事</h1>
+          <p>保持好奇、保持敬畏。沿着山脉、海岸与城市的灯火，在星球研究所式的审视中收集自然与人文的细节，让每一次远行都留下可再访的线索。</p>
+          <div class="badge-list">
+            <span class="badge">34座城市</span>
+            <span class="badge">12000+ km</span>
+            <span class="badge">持续更新</span>
+          </div>
+        </div>
+        <div class="hero-card hero-card-photo" id="hero-card-photo">
+          <div class="hero-card-actions">
+            <button class="ghost-btn hero-card-upload" id="hero-card-upload">上传背景</button>
+            <button class="ghost-btn hero-card-edit" id="hero-card-edit">编辑足迹文案</button>
+          </div>
+          <input type="file" id="hero-card-input" accept="image/*" hidden>
+          <div class="hero-card-content">
+            <h3 id="hero-title">最新足迹 · 新疆</h3>
+            <p id="hero-description">追逐阿勒泰的晨雾、喀纳斯的湖光，以及乌鲁木齐街区里交织的多元气息。</p>
+            <div style="margin-top:1rem;display:flex;gap:1rem;flex-wrap:wrap;">
+              <div>
+                <span class="stat">48h</span>
+                <p class="muted">城市观察</p>
+              </div>
+              <div>
+                <span class="stat">14</span>
+                <p class="muted">影像片段</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-image-section">
+        <img src="assets/images/IMG_3475.jpeg" alt="旅途风景" class="bottom-image">
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> 行星旅人 · 记录每一段地理现场
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
