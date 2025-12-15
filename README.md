@@ -40,41 +40,10 @@
 
 ## GitHub Pages 部署
 
-### 快速部署步骤
-
-1. **创建 GitHub 仓库**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/[你的用户名]/[仓库名].git
-   git push -u origin main
-   ```
-
-2. **启用 GitHub Pages**
-   - 进入仓库的 Settings（设置）
-   - 找到 Pages 选项
-   - Source（源）选择 `Deploy from a branch`
-   - Branch（分支）选择 `main` 或 `master`，文件夹选择 `/ (root)`
-   - 点击 Save（保存）
-
-3. **访问网站**
-   - 部署完成后，访问 `https://[你的用户名].github.io/[仓库名]`
-   - 首次部署可能需要几分钟时间
-
-### 项目已包含的 GitHub Pages 配置
-
-- ✅ `.nojekyll` - 禁用 Jekyll 处理
-- ✅ `_config.yml` - GitHub Pages 配置文件
-- ✅ 所有路径使用相对路径，兼容 GitHub Pages
-- ✅ 静态资源路径正确配置
-
-### 注意事项
-
-- 确保所有文件都已推送到 GitHub
-- 如果使用自定义域名，需要在仓库根目录添加 `CNAME` 文件
-- GitHub Pages 支持 HTTPS，建议使用 HTTPS 访问
+1. 将项目推送到 GitHub 仓库
+2. 在仓库设置中启用 GitHub Pages
+3. 选择主分支（通常是 `main` 或 `master`）作为源
+4. 访问 `https://[你的用户名].github.io/[仓库名]` 查看网站
 
 ## 项目结构
 
